@@ -1,0 +1,4 @@
+Um exemplo de frase.
+Outro exemplo de frase.
+Mel é doce.
+Café é amargo.
