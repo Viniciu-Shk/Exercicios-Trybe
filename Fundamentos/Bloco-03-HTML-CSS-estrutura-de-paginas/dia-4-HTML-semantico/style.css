@@ -11,6 +11,10 @@ body h2 {
     color: aquamarine;
 }
 
+body h3 {
+    color: gold;
+}
+
 body p {
     color: crimson;
 }
@@ -25,4 +29,29 @@ body ol li {
 
 .bold {
     font-weight: bold;
+}
+
+.foto-fatos {
+    float: right;
+    margin-right: 4%;
+}
+
+.margem-foto {
+   width: 80%;
+}
+
+.foto-visao {
+    width: 20%;
+    float: right;
+    margin-right: 4% ;
+}
+
+aside {
+    float: right;
+    width: 10%;
+}
+
+footer {
+    color: lawngreen;
+    padding-top: 10px;
 }
