@@ -1,3 +1,24 @@
+body {
+    background-color: black;
+    color: aliceblue;
+}
+
+body h1{
+    color: palevioletred;
+}
+
+body h2 {
+    color: aquamarine;
+}
+
+body p {
+    color: crimson;
+}
+
+body ol li {
+    color: darkviolet;
+}
+
 .italic {
     font-style: italic;
 }
