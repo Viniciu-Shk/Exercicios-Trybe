@@ -4,10 +4,8 @@ const c = 60;
 
 if (a + b + c === 180) {
     console.log("true");
-}   else if (a < 0 || b < 0 || c < 0) {
+} else if (a < 0 || b < 0 || c < 0) {
     console.log("error");
-}   else if (a > 180 || b > 180 || c > 180) {
-    console.log("error");
-}   else {
+} else {
     console.log("false");
 }
