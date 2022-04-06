@@ -14,7 +14,7 @@ if (salarioBruto <= 1556.94) {
     INSS = salarioBruto * 0.11;
     salarioBase = salarioBruto - INSS;
 } else {
-    INSS = 570.88
+    INSS = 570.88;
     salarioBase = salarioBruto - INSS;
 }
 
@@ -34,7 +34,7 @@ if (salarioBase <= 1903.98) {
     IR = salarioBase * 0.0275 - 869.36;
     salarioLiquido = salarioBase - IR;
 }
-console.log("Seu salário líquido é de:"); 
+console.log("Seu salário líquido é de:");
 console.log(salarioLiquido);
 console.log("Seu valor do INSS foi de:");
 console.log(INSS);
