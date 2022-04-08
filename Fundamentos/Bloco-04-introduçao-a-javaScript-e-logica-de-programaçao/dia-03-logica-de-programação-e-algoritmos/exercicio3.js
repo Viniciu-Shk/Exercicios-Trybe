@@ -22,3 +22,5 @@ console.log(comparacaoMenor);
 // abrir um for que itera o array
 // condicional comparando o tamanho da palavra ao já armazenado
 // utiliar o codigo do maior para encontrar menor comparando da mesma forma vs o maior
+
+// Resultado, não adiantou, tive que adaptar o código pois o algoritimo inicial não funcionou. É preciso melhorar o algorítimo inicial.
