@@ -1,10 +1,15 @@
-let maiorPrimo = 0;
+let biggestPrimeNumber = 0;
 
-for(index =1; index <= 50; index += 1) {
-    if(Math.ceil(index % 2) !== 0 && Math.ceil(index % 3) !== 0 && Math.ceil(index % 5) !== 0 && Math.ceil(index % 7) !== 0 && Math.ceil(index % 11) !== 0) {
-        maiorPrimo = index;
-    } else {
-        console.log("O número " + index + " não é primo!")
+for (let currentNumber = 0; currentNumber <= 50; currentNumber += 1) {
+  let isPrime = true;
+  for (let currentDivisor = 2; currentDivisor < currentNumber; currentDivisor += 1) {
+    if (currentNumber % currentDivisor === 0) {
+      isPrime = false;
     }
+  }
+  if (isPrime) {
+    biggestPrimeNumber = currentNumber;
+  }
 }
-console.log("O maior número primo é : " + maiorPrimo);
+
+console.log(biggestPrimeNumber);
