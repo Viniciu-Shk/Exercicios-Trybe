@@ -9,7 +9,7 @@ function palindromo(name) {
     }
     return nomeInvertido;  
 }
-let nome = "hannaha";
+let nome = "hannah";
 
 if(palindromo(nome) === nome) {
     console.log("É um palíndromo");
