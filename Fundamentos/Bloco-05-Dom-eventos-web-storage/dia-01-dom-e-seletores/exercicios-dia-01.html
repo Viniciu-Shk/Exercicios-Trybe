@@ -59,11 +59,17 @@
           provisory = provisory.toUpperCase();
           document.getElementsByTagName('p')[0].innerText = provisory;
         }
+        function exibeTudo(tag) {
+          for (let index = 0; index < document.getElementsByTagName(tag).length; index += 1) {
+            console.log(document.getElementsByTagName(tag)[index].innerText);
+          }
+        }
         corrigeP('Alteração do texto pela função');
         alteraCorMain('rgb(76,164,109)');
         alteraCorMeio('white');
         corrigeH1('Testando a função do H1');
         allUpperP();
+        exibeTudo('p');
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
@@ -73,8 +79,8 @@
  Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)). - ok
  Crie uma função que mude a cor do quadrado vermelho para branco. - ok
  Crie uma função que corrija o texto da tag <h1>. - ok
- Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
- Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+ Crie uma função que modifique todo o texto da tag <p> para maiúsculo. - ok
+ Crie uma função que exiba o conteúdo de todas as tags <p> no console. - ok
         */
     </script>
   </body>
