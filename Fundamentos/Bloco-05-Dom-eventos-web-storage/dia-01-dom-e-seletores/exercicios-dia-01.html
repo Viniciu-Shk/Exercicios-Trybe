@@ -54,10 +54,12 @@
         function corrigeH1(string) {
           document.getElementsByTagName('h1')[0].innerText = string;
         }
-        function allUpperP() {
-          let provisory = document.getElementsByTagName('p')[0].innerText;
+        function allUpperP(tag) {
+          for(index = 0; index < document.getElementsByTagName(tag).length; index += 1) {
+          let provisory = document.getElementsByTagName(tag)[index].innerText;
           provisory = provisory.toUpperCase();
-          document.getElementsByTagName('p')[0].innerText = provisory;
+          document.getElementsByTagName(tag)[index].innerText = provisory;
+          }
         }
         function exibeTudo(tag) {
           for (let index = 0; index < document.getElementsByTagName(tag).length; index += 1) {
@@ -68,7 +70,7 @@
         alteraCorMain('rgb(76,164,109)');
         alteraCorMeio('white');
         corrigeH1('Testando a função do H1');
-        allUpperP();
+        allUpperP('p');
         exibeTudo('p');
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
