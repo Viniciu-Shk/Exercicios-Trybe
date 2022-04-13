@@ -59,7 +59,8 @@
           global = document.getElementsByTagName(elemento);
           return global[0].innerText = string;
         }
-        function allUpperP(tag) {       
+        function allUpperP(tag) {  
+          global = document.getElementsByTagName(tag);     
           for(index = 0; index < global.length; index += 1) {
           let provisory = global[index].innerText;
           provisory = provisory.toUpperCase();
