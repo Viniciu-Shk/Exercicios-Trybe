@@ -54,14 +54,16 @@
         function corrigeH1(string) {
           document.getElementsByTagName('h1')[0].innerText = string;
         }
-        function allUpper() {
-          document.getElementsByTagName('p')[0].style.fontWeight = 'bold';
+        function allUpperP() {
+          let provisory = document.getElementsByTagName('p')[0].innerText;
+          provisory = provisory.toUpperCase();
+          document.getElementsByTagName('p')[0].innerText = provisory;
         }
         corrigeP('Alteração do texto pela função');
         alteraCorMain('rgb(76,164,109)');
         alteraCorMeio('white');
         corrigeH1('Testando a função do H1');
-        allUpper();
+        allUpperP();
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
