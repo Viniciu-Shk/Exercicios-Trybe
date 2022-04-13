@@ -45,16 +45,23 @@
         function corrigeP(string) {
             document.getElementsByTagName("p")[0].innerText = string;
         }
-        function alteraCorMeio(rgb) {
-            document.getElementsByClassName("center-content")[0].style.backgroundColor = rgb;
+        function alteraCorMain(rgb) {
+            document.getElementsByClassName("main-content")[0].style.backgroundColor = rgb;
         }
+        function alteraCorMeio(nomeCor) {
+            document.getElementsByClassName("center-content")[0].style.backgroundColor = nomeCor;
+        }
+
+        corrigeP('Alteração do texto pela função');
+        alteraCorMain('rgb(76,164,109)');
+        alteraCorMeio('white');
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
         - document.getElementsByClassName()
         - document.getElementsByTagName()
  Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício) - ok
- Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+ Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)). - ok
  Crie uma função que mude a cor do quadrado vermelho para branco.
  Crie uma função que corrija o texto da tag <h1>.
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
