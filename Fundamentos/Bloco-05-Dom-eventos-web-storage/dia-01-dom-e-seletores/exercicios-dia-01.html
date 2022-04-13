@@ -43,21 +43,25 @@
     </main>
     <script>
         function corrigeP(string) {
-            document.getElementsByTagName("p")[0].innerText = string;
+          document.getElementsByTagName("p")[0].innerText = string;
         }
         function alteraCorMain(rgb) {
-            document.getElementsByClassName("main-content")[0].style.backgroundColor = rgb;
+          document.getElementsByClassName("main-content")[0].style.backgroundColor = rgb;
         }
         function alteraCorMeio(nomeCor) {
-            document.getElementsByClassName("center-content")[0].style.backgroundColor = nomeCor;
+          document.getElementsByClassName("center-content")[0].style.backgroundColor = nomeCor;
         }
         function corrigeH1(string) {
-            document.getElementsByTagName('h1')[0].innerText = string;
+          document.getElementsByTagName('h1')[0].innerText = string;
+        }
+        function allUpper() {
+          document.getElementsByTagName('p')[0].style.fontWeight = 'bold';
         }
         corrigeP('Alteração do texto pela função');
         alteraCorMain('rgb(76,164,109)');
         alteraCorMeio('white');
         corrigeH1('Testando a função do H1');
+        allUpper();
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
@@ -65,8 +69,8 @@
         - document.getElementsByTagName()
  Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício) - ok
  Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)). - ok
- Crie uma função que mude a cor do quadrado vermelho para branco. - iok
- Crie uma função que corrija o texto da tag <h1>.
+ Crie uma função que mude a cor do quadrado vermelho para branco. - ok
+ Crie uma função que corrija o texto da tag <h1>. - ok
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
