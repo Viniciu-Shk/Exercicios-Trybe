@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body id="teste">
+    <script>
+        function createElement(elemento) {
+            let provisory = document.createElement(elemento);
+            return provisory;
+        }
+        function addText(string, elemento, index) {
+            let provisory2 = document.getElementsByTagName(elemento)[index];
+            provisory2.innerText = string;
+            return provisory2;
+        }
+        function addElement(pai, filho, index) {
+            let provisory3 = document.getElementsByTagName(pai)[index];
+            provisory3.appendChild(filho);
+        }
+        function addClass(className, elemento, index) {
+            let provisorio = document.getElementsByTagName(elemento)[index];
+            provisorio.classList.add(className);
+        }
+        function addSrcImg(src, tag, index) {
+            let provisorio = document.getElementsByTagName(tag)[index];
+            provisorio.src = src;
+        }
+        function rmvChild(tag, index, modificador) {
+            let provisorio = document.getElementsByClassName(pai)[index];
+            provisorio.removeChild(provisorio.modificador);
+        }
+        addElement('body', createElement('h1'), 0);
+        addText('Exercício 5.2 - JavaScript DOM', 'h1', 0);
+        addElement('body', createElement('main'), 0);
+        addClass('main-content', 'main', 0);
+        addElement('main', createElement('section'), 0);
+        addClass('center-content', 'section', 0);
+        addElement('main', createElement('section'), 0);
+        addClass('left-content', 'section', 1);
+        addElement('main', createElement('section'), 0);
+        addClass('right-content', 'section', 2);
+        addElement('section', createElement('p'), 0);
+        addText('Ipsum Lorem', 'p', 0);
+        addElement('section', createElement('img'), 0);
+        addSrcImg('https://picsum.photos/200', 'img', 0);
+        addClass('small-image', 'img', 0);
+        addElement('section', createElement('ol'), 0);
+        for (let index = 0; index < 9; index += 1) {
+            addElement('ol', createElement('li'), 0);
+            let provisorio = document.getElementsByTagName('li')[index];
+            provisorio.innerText = index + 1;
+            
+        }
+        addElement('main', createElement('h3'), 0);
+        addElement('main', createElement('h3'), 0);
+        addElement('main', createElement('h3'), 0);
+        addClass('title', 'h1', 0);
+        for (let index = 0; index < 4; index += 1) {
+            addClass('description', 'h3', index)
+            let provisorio = document.getElementsByTagName('h3')[index];
+        }
+        rmvChild('main', 0, 'firstElementChild');
+    </script>
+  </body>
+</html>
