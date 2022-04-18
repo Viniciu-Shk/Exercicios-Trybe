@@ -48,9 +48,16 @@ function mudaCorCalendario() {
         }
     }
 }
+function criaBotaoSexta(string) {
+    const divBotao = document.querySelector('.buttons-container');
+    const novoBotao = document.createElement('button');
+    novoBotao.id = 'btn-friday';
+    novoBotao.innerText = string;
+    divBotao.appendChild(novoBotao);
+}
 createDaysOfTheWeek();
 colocaDiaMes();
-
+criaBotaoSexta('Sexta-feira');
 
 
   // Escreva seu código abaixo.
