@@ -58,6 +58,17 @@ function criaBotaoSexta(string) {
 createDaysOfTheWeek();
 colocaDiaMes();
 criaBotaoSexta('Sexta-feira');
-
+const botaoSexta = document.querySelector('#btn-friday');
+botaoSexta.addEventListener('click', mudaTextoCalendario);
+function mudaTextoCalendario() {
+    const dias = document.querySelectorAll('.day');
+    for (let index = 0; index < dias.length; index += 1) {
+        if (dias[index].classList.contains('friday') && dias[index].innerHTML !== 'Sexta-Feira') {
+            dias[index].innerHTML = 'Sexta-Feira';
+        } else {
+            dias[index].innerHTML = dezDaysList[index];
+        }
+    }
+}
 
   // Escreva seu código abaixo.
