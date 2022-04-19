@@ -71,9 +71,17 @@ function mudaTextoCalendario() {
     }
 }
 const dias2 = document.querySelectorAll('.day');
-dias2.addEventListener('mouseover', zoom);
+for (let key in dias2) {
+    dias2[key].addEventListener('mouseover', zoom);
+    dias2[key].addEventListener('mouseout', tiraZoom);
+}
+
 function zoom(elemento) {
     elemento = elemento.target;
     elemento.style.fontSize = 2 + 'em';
+}
+function tiraZoom(elemento) {
+    elemento = elemento.target;
+    elemento.style.fontSize = 1 + 'em';
 }
   // Escreva seu código abaixo.
