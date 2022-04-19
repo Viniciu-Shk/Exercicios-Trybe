@@ -91,4 +91,11 @@ function criaTarefa(string) {
     pai.appendChild(tarefa);
 }
 criaTarefa('Cozinhar');
-  // Escreva seu código abaixo.
+function criaLegenda(string) {
+    let tarefa = document.createElement('div');
+    tarefa.style.backgroundColor = string;
+    let pai = document.querySelector('.my-tasks');
+    pai.appendChild(tarefa);
+}
+criaLegenda('red');
+  // Escreva seu código abaixo
