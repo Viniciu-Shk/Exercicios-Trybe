@@ -98,4 +98,13 @@ function criaLegenda(string) {
     pai.appendChild(tarefa);
 }
 criaLegenda('red');
+let divCor = document.querySelector('.my-tasks').lastChild;
+divCor.addEventListener('click', selecaoTask);
+function selecaoTask(elemento) {
+    elemento = elemento.target;
+    if (elemento.classList.contains('task-selected')) {
+        elemento.classlist.remove('task-selected');
+    } 
+    elemento.classList.add('task-selected');
+}
   // Escreva seu código abaixo
