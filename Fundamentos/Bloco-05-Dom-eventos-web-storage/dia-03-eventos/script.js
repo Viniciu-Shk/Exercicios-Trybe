@@ -70,5 +70,10 @@ function mudaTextoCalendario() {
         }
     }
 }
-
+const dias2 = document.querySelectorAll('.day');
+dias2.addEventListener('mouseover', zoom);
+function zoom(elemento) {
+    elemento = elemento.target;
+    elemento.style.fontSize = 2 + 'em';
+}
   // Escreva seu código abaixo.
