@@ -71,7 +71,7 @@ function mudaTextoCalendario() {
     }
 }
 const dias2 = document.querySelectorAll('.day');
-for (let key in dias2) {
+for (let key = 0; key < dias2.length; key += 1) {
     dias2[key].addEventListener('mouseover', zoom);
     dias2[key].addEventListener('mouseout', tiraZoom);
 }
@@ -84,4 +84,11 @@ function tiraZoom(elemento) {
     elemento = elemento.target;
     elemento.style.fontSize = 1 + 'em';
 }
+function criaTarefa(string) {
+    let tarefa = document.createElement('span');
+    tarefa.innerText = string;
+    let pai = document.querySelector('.my-tasks');
+    pai.appendChild(tarefa);
+}
+criaTarefa('Cozinhar');
   // Escreva seu código abaixo.
