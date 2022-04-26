@@ -12,24 +12,24 @@
     </header>
     <form action="" method="get">
         <label for="nome-user">Nome: 
-            <input type="text" id="nome-user" placeholder="Digite seu nome" name="username" required minlength="10" maxlength="40">
+            <input type="text" id="nome-user" placeholder="Digite seu nome" name="username" required minlength="10" maxlength="40" />
         </label>
         <br><br>
         <label for="email-user">E-mail: 
-            <input type="email" id="email-user" placeholder="Digite seu email" name="username" required minlength="10" maxlength="50">
+            <input type="email" id="email-user" placeholder="Digite seu email" name="username" required minlength="10" maxlength="50" />
         </label>
         <br><br>
         <label for="destino-viagem1">
-            <input type="radio" name="destino" id="destino-viagem1" value="Cidade">Cidade
+            <input type="radio" name="destino" id="destino-viagem1" value="Cidade" />Cidade
         </label>
         <label for="destino-viagem2">
-            <input type="radio" name="destino" id="destino-viagem2" value="Campo">Campo
+            <input type="radio" name="destino" id="destino-viagem2" value="Campo" />Campo
         </label>
         <label for="destino-viagem3">
-            <input type="radio" name="destino" id="destino-viagem3" value="Montanha">Montanha
+            <input type="radio" name="destino" id="destino-viagem3" value="Montanha" />Montanha
         </label>
         <label for="destino-viagem4">
-            <input type="radio" name="destino" id="destino-viagem4" value="Praia">Praia
+            <input type="radio" name="destino" id="destino-viagem4" value="Praia" />Praia
         </label>
         <br><br>
         <label for="textarea-user">
@@ -38,20 +38,23 @@
         </label>
         <br><br>
         <label for="data-viagem">Qual a melhor data para a sua viagem?
-            <input type="text" id="data-viagem" placeholder="dd/mm/aaaa" required>
+            <input type="text" id="data-viagem" placeholder="dd/mm/aaaa" required />
         </label>
         <br><br>
         <label for="consent-promo">Gostaria de receber promoções da Trybe?
-            <input type="checkbox" name="promocoes" id="consent-promo">
+            <input type="checkbox" name="promocoes" id="consent-promo" />
         </label>
         <br>
         <label for="consent-fotos">Aceita nosso Termos e Condições?
-            <input type="checkbox" name="promocoes" id="consent-fotos" required>
+            <input type="checkbox" name="promocoes" id="consent-fotos" required />
         </label>
         <br>
         <label for="btn-submit">
             <button type="submit" id="btn-submit">Enviar</button>
         </label>
+        <button type="reset" id="btn-reset">Resetar o formulário</button>
+        <label for="btn-reset"></label>
     </form>
+    <script src="script2.js"></script>
 </body>
 </html>
