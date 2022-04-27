@@ -12,3 +12,7 @@ function prevDef(evento) {
     }
 }
 botaoEnviar.addEventListener('click', prevDef);
+// let picker = new Pikaday({ field: $('#data-viagem')[0],
+//   format: 'D MMM YYYY',
+// });
+let picker = document.getElementById('data-viagem').DatePickerX.init();
