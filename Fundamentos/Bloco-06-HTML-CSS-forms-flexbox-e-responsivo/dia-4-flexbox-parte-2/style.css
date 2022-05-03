@@ -44,27 +44,23 @@ body {
 .main-container {
   display: flex;
   flex-wrap: wrap;
-  border: #5C687C 1px solid;
 }
 
 .movie-container {
   display: flex;
   flex-direction: column;
   flex: 10 0 700px;
-  border: red 1px solid;
 }
 
 .movie-container h2 {
   margin: 40px 0;
   text-align: center;
-  border: blue 1px solid;
 }
 
 .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  border: #5C687C 1px solid;
 }
 
 .card-container div {
@@ -76,7 +72,6 @@ body {
   height: 150px;
   justify-content: center;
   margin: 10px;
-  border: green 1px solid;
 }
 
 .aside-container {
@@ -85,7 +80,6 @@ body {
   justify-content: center;
   flex: 1 350px;
   margin: 20px;
-  border: yellow 1px solid;
 }
 
 .aside-container h3, h4 {
