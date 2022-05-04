@@ -66,3 +66,23 @@ html {
   }
 
 }
+
+@media screen and (min-width: 901px) {
+  body {
+    margin: 15px 15px;
+    font-size: 27px;
+  }
+
+  body * {
+    padding: 2px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  h1, h2, h3, header p {
+    font-size: 40px;
+    font-weight: bold;
+  }
+}
