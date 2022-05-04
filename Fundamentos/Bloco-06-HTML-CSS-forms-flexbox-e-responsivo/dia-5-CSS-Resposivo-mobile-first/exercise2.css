@@ -45,3 +45,24 @@ html {
     
   }
 }
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  body {
+    margin: 15px 15px;
+    font-size: 23px;
+  }
+
+  body * {
+    padding: 2px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  h1, h2, h3, header p {
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+}
