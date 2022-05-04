@@ -88,3 +88,32 @@ body {
     width: 90%;
   }
 }
+
+@media screen and (max-width: 360px) {
+  body {
+    padding: 0px;
+  }
+
+  #content {
+    width: 90%;
+  }
+
+  img {
+    max-width: 100%;
+    margin-top: 140px;
+  }
+  
+  #aside {
+    display: none;
+  }
+
+  #navigation ul {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .cabecalho {
+    position: fixed;
+    width: 100%;
+  }
+}
