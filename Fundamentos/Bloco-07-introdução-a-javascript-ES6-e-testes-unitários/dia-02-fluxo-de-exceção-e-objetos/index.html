@@ -20,11 +20,11 @@
       const value2 = document.getElementById('value2').value;
       if (value1 === '' || value2 === '') {
         throw new Error('Preencha os dois campos!');
-        } else {
+      } else if (isNaN(parseInt(value1)) || isNaN(parseInt(value2))) {
+          throw new Error('Utilize apenas números!');
+      } else {
           const result = parseInt(value1) + parseInt(value2);
           document.getElementById('result').innerHTML = `Resultado: ${result}`;
-          document.getElementById('value1').value = '';
-          document.getElementById('value2').value = '';
         }
       }
     const sum = () => {
@@ -32,6 +32,9 @@
         sumVerif();
       } catch (error) {
         document.getElementById('result').innerHTML = `${error.message}`;
+      } finally {
+          document.getElementById('value1').value = '';
+          document.getElementById('value2').value = '';
       }
     }
     window.onload = () => {
