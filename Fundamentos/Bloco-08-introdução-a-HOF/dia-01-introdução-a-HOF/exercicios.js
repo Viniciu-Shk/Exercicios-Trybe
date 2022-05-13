@@ -1,22 +1,21 @@
 //Lembrar de capturar o retorno da func de 1a classe!!
-let contadorID = 0;
-const newEmployees = (action, nome) => {
-  const pessoa = action();
-  contadorID += 1;
-  pessoa.id = contadorID;
-  pessoa.nome = nome;
-  pessoa.email = `${nome}@trybe.com`
-  return pessoa;
+const newEmployees = (action) => {
+  let pessoas = {
+    id1: action('Pedro Guerra'),
+    id2: action('Patati Patata'),
+    id3: action('Maria Do Carmo'),
+  };
+  return pessoas;
 }
-const cadastro = () => {
-  const employees = {}
-  employees.nome = undefined;
-  employees.email = undefined;
-  employees.id = undefined;
+const cadastro = (name) => {
+  const newName = name.replace(/ /g, '_');
+  const employees = {
+    nome: name,
+    email: `${newName}@trybe.com`,
+  };
   return employees;
-}
-console.log(newEmployees(cadastro, 'João-da-Silva'));
-console.log(newEmployees(cadastro, 'MariaDoCarmo'));
+};
+console.log(newEmployees(cadastro));
 
 //Exercicio 2
 
