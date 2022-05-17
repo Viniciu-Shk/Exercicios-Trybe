@@ -60,3 +60,10 @@ const books = [
     releaseYear: 1928,
   },
 ];
+
+//Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho
+
+const verifySixtyYearsOld = (book) => 2022 - book.releaseYear > 60;
+const oldBooks = (listaLivros) => listaLivros.filter(verifySixtyYearsOld).sort((a, b) => a.releaseYear - b.releaseYear);
+
+console.log(oldBooks(books));
