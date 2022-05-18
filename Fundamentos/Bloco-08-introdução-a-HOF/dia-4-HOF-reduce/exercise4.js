@@ -61,11 +61,7 @@ const books = [
   },
 ];
 
-//Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
-const avarageAge = (sumAges, birthAge) => sumAges + birthAge.ageReleaseBook;
-const avarageAuthors = (livros) => livros.map((livro) => ({
-  nome: livro.author.name,
-  ageReleaseBook: livro.releaseYear - livro.author.birthYear,
-}));
-const avaregeResult = (array) => parseInt(avarageAuthors(array).reduce(avarageAge, 0)) / array.length;
-console.log(avaregeResult(books));
+//Encontre o livro com o maior nome.
+const getLongerString = (bigger, current) => bigger.name.length > current.name.length ? bigger : current;
+const longestBookName = books.reduce(getLongerString).name;
+console.log(longestBookName);
