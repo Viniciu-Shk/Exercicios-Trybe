@@ -62,6 +62,9 @@ const books = [
 ];
 
 //Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
-const avarageAge = (sumAges, birthAge) => sumAges + birthAge.author.birthYear;
-const avarageAuthors = (livros) => livros.reduce(avarageAge, 0);
-console.log(avarageAuthors(books));
+const avarageAge = (sumAges, birthAge) => sumAges + birthAge.ageReleaseBook / 6;
+const avarageAuthors = (livros) => livros.map((livro) => ({
+  nome: livro.author.name,
+  ageReleaseBook: livro.releaseYear - livro.author.birthYear,
+}));
+console.log(parseInt(avarageAuthors(books).reduce(avarageAge, 0)));
