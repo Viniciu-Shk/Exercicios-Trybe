@@ -28,7 +28,8 @@ const people = [
   },
 ];
 // const [person1, person2, person3, person4, person5] = people;
-const verifyPeople = ({bornIn, nationality}) => (bornIn <= 2000 && nationality === 'Autralian') ? true : false;
+const verifyPeople = ({bornIn, nationality}) => (bornIn <= 2000 && nationality === 'Australian');
+
 const filterPeople = (array) => array.filter(verifyPeople);
 
 console.log(filterPeople(people));
