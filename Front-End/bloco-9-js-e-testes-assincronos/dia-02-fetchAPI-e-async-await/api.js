@@ -29,9 +29,13 @@ const crypto = async () => {
 }
 
 const convertBRL = async () => {
-  const response = await fetch(urlUSD);
-  const data = await response.json();
-  return data.usd.brl;
+  try {
+    const response = await fetch(urlUSD);
+    const data = await response.json();
+    return data.usd.brl;
+  } catch (error) {
+    console.log(`Deu erro: \n${error}`);
+  }
 }
 
 window.onload = () => crypto();
