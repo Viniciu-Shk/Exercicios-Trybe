@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pokeCard {
+  border: 1px black solid;
+  border-radius: 8px;
+  display: flex;
+  flex-flow: row wrap;
+  width: 35%;
+  height: 20%;
+}
+
+img {
+  float: right;
+  width: 40%;
+}
+
+ul {
+  list-style: none;
+  padding: 5px;
+}
+
+li {
+  padding: 2px;
+}
+
