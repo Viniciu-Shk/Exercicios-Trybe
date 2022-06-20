@@ -1,0 +1,9 @@
+.item-list {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 5px;
+}
+
+span {
+  padding: 1px;
+}
