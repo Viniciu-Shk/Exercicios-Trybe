@@ -44,13 +44,14 @@ const mockFile = JSON.stringify({
       name: 'Mounds',
       brandId: 3,
     },
-  ],
+  ]
 });
 
 describe('Testando a API Cacao Trybe', function () {
   beforeEach(function () {
     sinon.stub(fs.promises, 'readFile')
       .resolves(mockFile);
+    sinon.stub(fs.promises, 'writeFile');
   });
 
   afterEach(function () {
@@ -114,6 +115,61 @@ describe('Testando a API Cacao Trybe', function () {
       
       expect(response.status).to.be.equal(200);
       expect(response.body).to.deep.equal({ totalChocolates: 4 });
-    })
-  })
+    });
+  });
+  describe('Usando o metodo GET em /chocolates/search', function () {
+    it('Retorna os chocolates que contem a string passada', async function () {
+      const response = await chai.request(app).get('/chocolates/search?name=White');
+      
+      expect(response.status).to.be.equal(200);
+      expect(response.body).to.deep.equal({ chocolates: [{
+        id: 2,
+        name: "White Coconut",
+        brandId: 1
+      }]
+       });
+    });
+    it('Retorna array vazio e 404 caso não encontre nenhum chocolate', async function () {
+      const response = await chai.request(app).get('/chocolates/search?name=ZZZ');
+      console.log(response.body);
+      
+      expect(response.status).to.be.equal(404);
+      expect(response.body).to.deep.equal([]);
+    });
+  });
+  describe('Usando o metodo PUT em /chocolates/:id', function () {
+    it('Atualiza um choc que exista', async function () {
+      const request = { 
+        name: "Mint Pretty Good",
+        brandId: 2
+      }
+      const returnObj = {
+        chocolate: { 
+          id: 1,
+          name: "Mint Pretty Good",
+          brandId: 2
+        }
+      }
+      const response = await chai
+        .request(app)
+        .put('/chocolates/1')
+        .send(request);
+      
+      expect(response.status).to.be.equal(200);
+      expect(response.body).to.deep.equal(returnObj);
+    });
+    it('Se i choc não existe, retorna um erro', async function () {
+      const request = { 
+        name: "Mint Pretty Good",
+        brandId: 2
+      }
+      const response = await chai
+        .request(app)
+        .put('/chocolates/555')
+        .send(request);
+      
+      expect(response.status).to.be.equal(404);
+      expect(response.body).to.deep.equal({ message: 'chocolate not found' });
+    });
+  });
 });
