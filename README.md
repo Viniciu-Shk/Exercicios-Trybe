@@ -117,16 +117,16 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 20-5: _[Projeto - All For One]()_
 ##### Bloco 21: Funções SQL, JOINs e Normalização
 - [x] 21-1: _Funções mais usadas no SQL_
-- [ ] 21-2: _Descomplicando JOINs_
-- [ ] 21-3: _Transformando ideias em um modelo de banco de dados_
-- [ ] 21-4: _Aula ao vivo + [Projeto - Vocabulary Booster]()_
+- [x] 21-2: _Descomplicando JOINs_
+- [x] 21-3: _Transformando ideias em um modelo de banco de dados_
+- [x] 21-4: _Aula ao vivo + [Projeto - Vocabulary Booster]()_
 ##### Bloco 22: Introdução ao desenvolvimento Web com Node.js
-- [ ] 22-1: _Intro - Node.js_
-- [ ] 22-1: _Node.js - Um motor JavaScript_
-- [ ] 22-2: _Node.js - Fluxo Assíncrono_
-- [ ] 22-3: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
-- [ ] 22-4: _Express - HTTP com Node.js_
-- [ ] 22-5: _Express - Middlewares_
+- [x] 22-1: _Intro - Node.js_
+- [x] 22-1: _Node.js - Um motor JavaScript_
+- [x] 22-2: _Node.js - Fluxo Assíncrono_
+- [x] 22-3: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
+- [x] 22-4: _Express - HTTP com Node.js_
+- [x] 22-5: _Express - Middlewares_
 - [ ] 22-6: _[Projeto - Talker Manager]()_
 ##### Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
 - [ ] 23-1: _Introdução - Arquitetura de Software_
