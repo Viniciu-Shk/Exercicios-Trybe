@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@supercharge/strings": "^1.29.0",
+    "age-calculator": "^1.0.0"
+  }
+}
