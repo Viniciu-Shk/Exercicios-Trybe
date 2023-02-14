@@ -1,7 +1,8 @@
 import statistics
+from typing import List
 
 
-def med(arr: list) -> int or float:
+def med(arr: List[int]) -> int or float:
     '''Function that receives a number
     list and returns the median of the list'''
     return statistics.median(arr)
