@@ -1,7 +1,8 @@
 import math
+from typing import Tuple
 
 
-def get_paint(sqrM: int) -> tuple:
+def get_paint(sqrM: int) -> Tuple:
     '''Calculates how many cans of paint and the cost based on surface area'''
     canPrice = 80
     coverage = 54
