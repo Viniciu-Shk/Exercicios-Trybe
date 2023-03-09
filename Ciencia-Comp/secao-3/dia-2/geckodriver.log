@@ -1,0 +1,43 @@
+1678388564727	geckodriver	INFO	Listening on 127.0.0.1:47985
+1678388565233	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "50991" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileZI6jP4"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: VA-API test failed: missing or old libva-drm library.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678388566159	Marionette	INFO	Marionette enabled
+1678388566164	Marionette	INFO	Listening on port 38043
+Read port: 38043
+WebDriver BiDi listening on ws://127.0.0.1:50991
+1678388566297	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileZI6jP4/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50991/devtools/browser/598e982e-5df3-4af3-a3ed-d450d2b4495c
+1678388571808	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WygWmAr8N2thj-jBdqJCiD6QGZJ45ru74cfJMvWtULI.js line 2 > eval line 555 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1678388580985	geckodriver	INFO	Listening on 127.0.0.1:38673
+1678388580989	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "49203" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileCXNa7g"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: VA-API test failed: missing or old libva-drm library.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678388581865	Marionette	INFO	Marionette enabled
+1678388581870	Marionette	INFO	Listening on port 39807
+Read port: 39807
+WebDriver BiDi listening on ws://127.0.0.1:49203
+1678388581987	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileCXNa7g/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:49203/devtools/browser/bcb68a71-e0d5-4acb-913d-f330dbde5868
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WygWmAr8N2thj-jBdqJCiD6QGZJ45ru74cfJMvWtULI.js line 2 > eval line 769 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1678388654263	Marionette	INFO	Stopped listening on port 39807
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1678388659562	Marionette	INFO	Stopped listening on port 38043
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
