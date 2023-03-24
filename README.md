@@ -79,7 +79,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 12-3: _[Projeto - TrybeTunes]()_
 ##### Bloco 13: Metodologias Ágeis
 - [x] 13-1: _Metodologias Ágeis_
-- [x] 13-2: _[Projeto - Frontend Online Store]()_
+- [x] 13-2: _[Projeto - Frontend Online Store](https://github.com/vinicius-shk/Front-End-Online-Store)
 ##### Bloco 14: Testes automatizados com React Testing Library
 - [x] 14-1: _RTL - Primeiros passos_
 - [x] 14-2: _RTL - Mocks e Inputs_
@@ -152,7 +152,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 26-1: _Introdução ao TypeScript_
 - [x] 26-2: _Tipagem Estática e Generics_
 - [x] 26-3: _Express com TypeScript_
-- [x] 26-4: _[Projeto - Trybe Smith]()_
+- [x] 26-4: _[Projeto - Trybe Smith](https://github.com/vinicius-shk/Trybesmith)
 ##### Bloco 27: Programação Orientada a Objetos (POO) e SOLID
 - [x] 27-1: _Introdução à Orientação a Objetos_
 - [x] 27-2: _Herança e Interfaces_
