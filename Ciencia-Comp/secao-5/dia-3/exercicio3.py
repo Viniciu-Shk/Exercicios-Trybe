@@ -2,7 +2,7 @@
 # Verifique quantos produtos formam boas combinações, ou seja, quando um produto é igual ao outro e seu índice é maior que o anterior.
 # Esta combinação pode ser utilizada para modificar os produtos de uma página.
 
-# Complexidade de O(n log n)
+# Complexidade de O(n)
 
 def get_combos(lista: list) -> int:
     lista.sort()
