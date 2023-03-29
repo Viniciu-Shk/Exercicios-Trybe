@@ -32,3 +32,9 @@ resultado = 1
 # Os índices (0, 1) formam a única combinação.
 total = get_combos(produtos)
 assert total == resultado
+
+# Exemplo 3:
+produtos = [1, 3, 1, 1, 2, 3, 1]
+resultado = 7
+total = get_combos(produtos)
+assert total == resultado
