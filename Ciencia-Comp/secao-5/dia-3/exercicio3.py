@@ -6,9 +6,7 @@
 
 def get_combos(lista: list) -> int:
     lista.sort()
-    counter = 0
-    apearance = 0
-    total = 0
+    counter, apearance, total = 0, 0, 0
     for idx, num in enumerate(lista):
         if lista[idx + 1] == num:
             apearance += 1
