@@ -15,8 +15,7 @@ def get_combos(lista: list) -> int:
             counter += apearance
         if lista[idx + 1] != num or idx == len(lista) - 2:
             total += counter
-            counter = 0
-            apearance = 0
+            counter, apearance = 0, 0
         if idx == len(lista) - 2:
             break
     return total
